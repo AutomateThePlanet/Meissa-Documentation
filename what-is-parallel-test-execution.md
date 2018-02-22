@@ -9,5 +9,5 @@ Some unit test frameworks have native parallel execution support like NUnit. You
 ![Multiple Machines- Single Process](https://i.imgur.com/HHGTQhV.png)
 Your second option is to run your tests at the same time on multiple machines and merge the results at the end. Usually, you need an additional complex tooling, for example Microsoft Test Controller/Agents setup.
 ## 3. Parallel Distributed Testing- Multiple Machines - Multiple Processes ##
-![Multiple Processes- Multiple Procesesses](https://i.imgur.com/YM4lEQ1.png)
+![Multiple Processes- Multiple Processes](https://i.imgur.com/YM4lEQ1.png)
 You can mix both approaches. In this case, you will use the complex tooling and, at the same time, run the tests in parallel on each machine. 
