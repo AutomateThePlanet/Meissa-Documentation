@@ -1,6 +1,6 @@
 # Getting Started #
 
-1. Go to meissarunner.com
+1. Go to [**meissarunner.com**](http://meissarunner.com/ "meissarunner.com")
 2. Download the file for your operating system (Windows, Linux, MacOS)
 3. Unzip It 
 
@@ -9,9 +9,9 @@ You need to choose which type of test execution you prefer:
 - Distributed testing- multiple machines - single process
 - Parallel distributed testing- multiple machines - multiple processes
 
-For more information about the topic refer to the section- **What is a Parallel Test Execution?**
+For more information about the topic refer to the section- [**What is a Parallel Test Execution?**](what-is-parallel-test-execution.md)
 
-Below you can find info about the different setup and examples how to start using Meissa. However, for complete reference about all available options and their meanings refer to the **How Do We Use It?** section.
+Below you can find info about the different setup and examples how to start using Meissa. However, for complete reference about all available options and their meanings refer to the [**How Do We Use It?**](how-do-we-use-it.md) section.
 
 ## 1. Parallel- Single Machine - Multiple Processes ##
 
@@ -62,4 +62,4 @@ If you want to use Meissa's parallel execution capabilities, you need to add an 
 ```
 --runInParallel
 ```
-For more detailed information refer to the **features** and **how it works internally** sections.
+For more detailed information refer to the [**features**](features.md) and [**how it works internally**](how-does-it-work-internally.md) sections.
