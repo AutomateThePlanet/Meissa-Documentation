@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Get Involved"
+excerpt: "Get Involved"
+date:   2018-02-20 03:50:17 +0200
+---
 # Get Involved #
 - [**Report bugs**](https://github.com/angelovstanton/Meissa/issues)
 - Suggest new features

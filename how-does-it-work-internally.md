@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "How Does It Work Internally?"
+excerpt: "How Does It Work Internally?"
+date:   2018-02-20 06:50:17 +0200
+---
 # How Does It Work Internally? #
 
 ![High Overview](https://i.imgur.com/dqJlM0f.png)

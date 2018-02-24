@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Go Even Further- The Biggest Experiment"
+excerpt: "Go Even Further- The Biggest Experiment"
+date:   2018-02-20 10:50:17 +0200
+---
 # Go Even Further- The Biggest Experiment #
 I wanted to end the talk with some statistics, and I thought it might be fun to go even further. So, I created a test project with 100000 tests. I created a simple application for their generation.
 

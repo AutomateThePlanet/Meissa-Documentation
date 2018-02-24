@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "How to Develop Plugins?"
+excerpt: "How to Develop Plugins?"
+date:   2018-02-20 08:50:17 +0200
+---
 # How to Develop Plugins? #
 Meissa exposes two types of plugins.
 

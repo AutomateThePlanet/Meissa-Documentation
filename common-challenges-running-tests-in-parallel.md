@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Common Challenges Running Tests in Parallel"
+excerpt: "Common Challenges Running Tests in Parallel"
+date:   2018-02-20 01:50:17 +0200
+---
 # Common Challenges Running Tests in Parallel #
 
 There are many benefits in running tests in parallel; however, you need to know there are many challenges to overcome before you are ready to speed up your test runs this way. Now, I will share some of the issues we faced testing our product and add some from my previous experience and the Automate The Planet's survey. I will try to give you sample solutions to those problems.

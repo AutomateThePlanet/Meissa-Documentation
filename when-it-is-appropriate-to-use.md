@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "When It Is Appropriate to Use and When Not?"
+excerpt: "When It Is Appropriate to Use and When Not?"
+date:   2018-02-20 12:50:17 +0200
+---
 # When It Is Appropriate to Use and When Not? #
 
 When you go to buy bread from the bakery, you don’t go with a shuttle. Same can be applied here. I believe Meissa is not the appropriate choice in many cases. I will mention a few. 

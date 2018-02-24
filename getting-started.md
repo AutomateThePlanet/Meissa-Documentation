@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Getting Started"
+excerpt: "Getting Started"
+date:   2018-02-20 04:50:17 +0200
+---
 # Getting Started #
 
 1. Go to [**meissarunner.com**](http://meissarunner.com/ "meissarunner.com")

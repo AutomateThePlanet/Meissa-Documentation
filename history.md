@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "History"
+excerpt: "History"
+date:   2018-02-20 05:50:17 +0200
+---
 # History #
 Now, it is time for the story of how our company solved the problem. To understand why we created the tool, I need to tell you what we needed to test.
 Our company specializes in building test automation framework and tooling for web, mobile, desktop, and API. It is not a visual application rather than a set of C# libraries and other tools to speed up writing of tests scripts. My belief is that, when you build a testing tool, you need to make sure it is covered with lots of tests.

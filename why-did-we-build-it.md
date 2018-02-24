@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Why Did We Build It?"
+excerpt: "Why Did We Build It?"
+date:   2018-02-20 13:50:17 +0200
+---
 # Why Did We Build It? #
 
 I had the task to perform research and think of a way to solve the problem. I read everything I could find for a couple of days, besides all the solutions I know from the companies I worked for in the past. The truth is, for seven years, the way people execute their tests has not really changed. 

@@ -1,3 +1,9 @@
+---
+layout: default
+title:  "Requirements"
+excerpt: "Requirements"
+date:   2018-02-20 09:50:17 +0200
+---
 # Requirements #
 
 **Supported Operating Systems**: Windows, Linux, MacOS
