@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Go Even Further- The Biggest Experiment"
-excerpt: "Go Even Further- The Biggest Experiment"
+excerpt: "Read about the biggest Meissa experiment where we loaded the tool with running 100000 tests on ten machines."
 date:   2018-02-20 10:50:17 +0200
 ---
 # Go Even Further- The Biggest Experiment #

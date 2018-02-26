@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Common Challenges Running Tests in Parallel"
-excerpt: "Common Challenges Running Tests in Parallel"
+excerpt: "Read about the many challenges you need to overcome before you are ready to speed up your tests. Find sample solutions."
 date:   2018-02-20 01:50:17 +0200
 ---
 # Common Challenges Running Tests in Parallel #

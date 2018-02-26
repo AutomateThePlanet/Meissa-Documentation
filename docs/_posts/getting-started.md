@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Getting Started"
-excerpt: "Getting Started"
+excerpt: "See how you can use Meissa depending on your context."
 date:   2018-02-20 04:50:17 +0200
 ---
 # Getting Started #
