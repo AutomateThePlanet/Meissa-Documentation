@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "When It Is Appropriate to Use and When Not?"
-excerpt: "When It Is Appropriate to Use and When Not?"
+excerpt: "Meissa is not the appropriate choice in many cases, see when it is not a good idea to use it."
 date:   2018-02-20 12:50:17 +0200
 ---
 # When It Is Appropriate to Use and When Not? #

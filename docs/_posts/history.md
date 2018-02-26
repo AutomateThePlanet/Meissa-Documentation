@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "History"
-excerpt: "History"
+excerpt: "Find out how the tool was born."
 date:   2018-02-20 05:50:17 +0200
 ---
 # History #

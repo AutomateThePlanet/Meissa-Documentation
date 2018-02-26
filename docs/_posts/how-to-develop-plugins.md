@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "How to Develop Plugins?"
-excerpt: "How to Develop Plugins?"
+excerpt: "See what type of plugins we support and how you can execute your code in Meissa's execution pipeline."
 date:   2018-02-20 08:50:17 +0200
 ---
 # How to Develop Plugins? #

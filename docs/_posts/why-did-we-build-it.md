@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Why Did We Build It?"
-excerpt: "Why Did We Build It?"
+excerpt: "Read about our research. Find out how Meissa differs from our other available tools and how it can integrate with them."
 date:   2018-02-20 13:50:17 +0200
 ---
 # Why Did We Build It? #

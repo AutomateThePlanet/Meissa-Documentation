@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Features"
-excerpt: "Features"
+excerpt: "Find out how our tool can help you, read the complete list of Meissa features."
 date:   2018-02-20 02:50:17 +0200
 ---
 # Features #

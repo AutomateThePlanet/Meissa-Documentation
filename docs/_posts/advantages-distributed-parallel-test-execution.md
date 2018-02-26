@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Advantages Distributed Parallel Test Execution"
-excerpt: "We have many moving parts- server, test agents, runner and so on. All of them use single command-line-interface; there are no separate installers or executables."
+excerpt: "Find out why do you need to run your tests distributed."
 date:   2018-02-20 00:50:17 +0200
 ---
 # Advantages Distributed Parallel Test Execution #
