@@ -40,7 +40,7 @@ public static void Dispose()
         }
     }
 }
-{% endhighlight %
+{% endhighlight %}
  
 ## Video Recording and Screenshots ##
 Another UI tests related challenge was that, if you run multiple browsers on a single machine, the video recording of the tests become useless. We have such capability in our automation framework for locating problems easier. The same is valid for taking screenshots for some drivers that take screenshots of the entire desktop instead of the browser tab.
@@ -63,7 +63,7 @@ private static int GetFreeTcpPort()
     tcpListener.Stop();
     return port;
 }
-{% endhighlight %
+{% endhighlight %}
 
 ## Edge Driver Cannot Start Multiple Instances ##
 In our company, we run our CI tests using the Edge browser, since the tests on it execute faster, even compared to the headless browsers. However, it has some drawbacks. Once the driver is disposed, it closes all currently opened browsers (even not opened by WebDriver), which makes the execution in parallel on a single machine impossible. Moreover, it is designed in a way that doesn't support multiple WebDriver instances, even if you assign a different port on initialize. 
