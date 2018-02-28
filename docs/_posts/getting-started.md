@@ -4,8 +4,6 @@ title:  "Getting Started"
 excerpt: "See how you can use Meissa depending on your context."
 date:   2018-02-20 04:50:17 +0200
 ---
-# Getting Started #
-
 1. Go to [**meissarunner.com**](http://meissarunner.com/ "meissarunner.com")
 2. Download the file for your operating system (Windows, Linux, MacOS)
 3. Unzip It 

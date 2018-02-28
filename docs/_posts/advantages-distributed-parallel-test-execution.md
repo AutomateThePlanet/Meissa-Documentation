@@ -4,8 +4,6 @@ title:  "Advantages Distributed Parallel Test Execution"
 excerpt: "Find out why do you need to run your tests distributed."
 date:   2018-02-20 00:50:17 +0200
 ---
-# Advantages Distributed Parallel Test Execution #
-
 ![Advantages Parallel Test Execution](https://i.imgur.com/L1fW4Lu.png)
 
 The most obvious reason is speed. Instead of executing the tests in 16 hours, they complete in under 4 hours. When all required tests can be run a couple of times in a business day, you will be able to release your application every day (if we talk about web projects). Even if it is not web, you can improve the quality of your app and shorten the testing cycle by executing all your tests as part of the CI process. This means you will have higher coverage in shorter throughput time. As you know, each time your tests execute, their ROI (return of investment) increases. Last, the more often you run all your tests, the probability of locating unstable/not-well-written tests rises.

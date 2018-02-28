@@ -7,8 +7,6 @@ anchors:
   preparing-test-environment-and-managing-tests-data: Preparing Environment
   internal-apis-load: APIs Load
 ---
-# Common Challenges Running Tests in Parallel #
-
 There are many benefits in running tests in parallel; however, you need to know there are many challenges to overcome before you are ready to speed up your test runs this way. Now, I will share some of the issues we faced testing our product and add some from my previous experience and the Automate The Planet's survey. I will try to give you sample solutions to those problems.
 
 ## Preparing Test Environment and Managing Tests Data ##

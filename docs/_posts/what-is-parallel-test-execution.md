@@ -4,8 +4,6 @@ title:  "What is a Parallel Test Execution?"
 excerpt: "Read more about the different types of parallel test execution."
 date:   2018-02-20 11:50:17 +0200
 ---
-# What is a Parallel Test Execution? #
-
 I can define at least three types of parallel test execution:
 
 ## 1. Parallel- Single Machine - Multiple Processes ##

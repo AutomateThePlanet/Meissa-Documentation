@@ -4,7 +4,6 @@ title:  "Go Even Further- The Biggest Experiment"
 excerpt: "Read about the biggest Meissa experiment where we loaded the tool with running 100000 tests on ten machines."
 date:   2018-02-20 10:50:17 +0200
 ---
-# Go Even Further- The Biggest Experiment #
 I wanted to end the talk with some statistics, and I thought it might be fun to go even further. So, I created a test project with 100000 tests. I created a simple application for their generation.
 
 ![Load Test Generation](https://i.imgur.com/MHGAf9b.png)

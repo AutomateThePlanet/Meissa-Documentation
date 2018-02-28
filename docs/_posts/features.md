@@ -4,8 +4,6 @@ title:  "Features"
 excerpt: "Find out how our tool can help you, read the complete list of Meissa features."
 date:   2018-02-20 02:50:17 +0200
 ---
-# Features #
-
 ![Meissa Features](https://i.imgur.com/978W5sG.png)
 ## Parallel on Agents ##
 The tests execution tremendously speeds up from the distribution on multiple machines. However, it can be further improved by executing the tests in parallel on the tests agents. It can parallelize the tests even in a single container.
