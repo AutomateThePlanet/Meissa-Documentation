@@ -3,6 +3,10 @@ layout: default
 title:  "How Does It Work Internally?"
 excerpt: "Are you curious how the magic happens? Read a full description of how all moving parts work together."
 date:   2018-02-20 06:50:17 +0200
+permalink: /how-does-it-work-internally/
+anchors:
+  meissa-test-agent-mode: Test Agent
+  meissa-test-runner-mode: Meissa Test Runner Mode
 ---
 ![High Overview](https://i.imgur.com/dqJlM0f.png)
 

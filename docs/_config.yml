@@ -40,6 +40,32 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-navigation:
+navigation:    
+    "what-is-parallel-test-execution":
+        title: Parallel Test Execution?
+    "advantages-distributed-parallel-test-execution":
+        title: Advantages Distributed Testing
+    "getting-started":
+        title: Getting Started
     "common-challenges":
-        title: Common Challengers Running Parallel Tests
+        title: Parallel Tests Challenges 
+    "requirements":
+        title: Requirements
+    "features":
+        title: Features 
+    "how-do-we-use-it":
+        title: How Do We Use It?    
+    "why-did-we-build-it":
+        title: Why Did We Build It?
+    "history":
+        title: History
+    "the-biggest-experiment":
+        title: The Biggest Experiment
+    "when-it-is-appropriate-to-use-and-when-not":
+        title: When to Use?
+    "how-does-it-work-internally":
+        title: How Does It Works?
+    "how-to-develop-plugins":
+        title: How to Develop Plugins?
+    "get-involved":
+        title: Get Involved

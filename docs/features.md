@@ -3,6 +3,15 @@ layout: default
 title:  "Features"
 excerpt: "Find out how our tool can help you, read the complete list of Meissa features."
 date:   2018-02-20 02:50:17 +0200
+permalink: /features/
+anchors:
+  parallel-on-agents: Parallel on Agents
+  cross-platform: Cross-Platform
+  failing-tests-retry: Failing Tests Retry
+  custom-parameters: Custom Parameters
+  built-in-extensibility: Built-in Extensibility
+  single-cli: Single CLI
+  safe-test-run-abortion: Safe Test Run Abortion
 ---
 ![Meissa Features](https://i.imgur.com/978W5sG.png)
 ## Parallel on Agents ##
@@ -15,7 +24,7 @@ Smartly balances the tests across remote machines based on previous tests execut
 Retries the failing tests multiple times to see whether there are real problems in the system under tests or some random environment issue occurred during the run. In the end, the tool produces single tests results file. You can specify a threshold %. If more than the specified number of tests are failing, they won't be retried.
 ## Custom Parameters ##
 Supports passing custom data to your tests through the runner. Like unique CI build number or some specific folder. You will be able to access the data from your tests through environmental variables.
-## Built-in Extendability ##
+## Built-in Extensibility ##
 Executes custom logic without modifying the source code. Offers plug-in API.
 Test Framework and Programming Language Agnostic
 Runs tests written on different test frameworks no matter the language- C#, Java, etc. Offers plug-in API.

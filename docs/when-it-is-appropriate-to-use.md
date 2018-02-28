@@ -3,6 +3,7 @@ layout: default
 title:  "When It Is Appropriate to Use and When Not?"
 excerpt: "Meissa is not the appropriate choice in many cases, see when it is not a good idea to use it."
 date:   2018-02-20 12:50:17 +0200
+permalink: /when-it-is-appropriate-to-use-and-when-not/
 ---
 When you go to buy bread from the bakery, you don’t go with a shuttle. Same can be applied here. I believe Meissa is not the appropriate choice in many cases. I will mention a few. 
 If you have only unit tests and they are executed for a few minutes without parallel test execution, then you can use the native tests runners. You don’t need to bother with more machines or changing the tool. 

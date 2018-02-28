@@ -3,6 +3,7 @@ layout: default
 title:  "Get Involved"
 excerpt: "Find out how you can contribute to the project."
 date:   2018-02-20 03:50:17 +0200
+permalink: /get-involved/
 ---
 - [**Report bugs**](https://github.com/angelovstanton/Meissa/issues)
 - Suggest new features

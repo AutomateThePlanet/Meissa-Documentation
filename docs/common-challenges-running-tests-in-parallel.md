@@ -6,6 +6,10 @@ permalink: /common-challenges/
 anchors:
   preparing-test-environment-and-managing-tests-data: Preparing Environment
   internal-apis-load: APIs Load
+  keep-the-clean-state-of-agents: Clean Agents State 
+  video-recording: Video Recording
+  screenshots: Screenshots
+  edge-driver-cannot-start-multiple-instances: Edge Driver Multiple Sessions
 ---
 There are many benefits in running tests in parallel; however, you need to know there are many challenges to overcome before you are ready to speed up your test runs this way. Now, I will share some of the issues we faced testing our product and add some from my previous experience and the Automate The Planet's survey. I will try to give you sample solutions to those problems.
 
@@ -21,7 +25,7 @@ If you use internal APIs to setup/clean your test data, you need to make sure yo
 ### Solution ###
 The solution is to make sure the required services are hosted on the appropriate machines and are load balanced, so they can handle the load.
 
-## Clear Browsers State ##
+## Keep The Clean State of Agents ##
 As promised, now I will share how we make sure the test agents' browsers are clean after each run.
 ### Solution ###
 Meissa supports writing custom plugins and executing their logic at different points of the tests execution, for example, before the whole test run, after it, or when performing some logic on the test agent’s machines. As a part of custom plugin, we added logic for killing all WebDriver related processes and browsers at the end of each test agent run. Below you can find the code.
@@ -42,12 +46,15 @@ public static void Dispose()
 }
 {% endhighlight %}
  
-## Video Recording and Screenshots ##
-Another UI tests related challenge was that, if you run multiple browsers on a single machine, the video recording of the tests become useless. We have such capability in our automation framework for locating problems easier. The same is valid for taking screenshots for some drivers that take screenshots of the entire desktop instead of the browser tab.
+## Video Recording ##
+Another UI tests related challenge was that, if you run multiple browsers on a single machine, the video recording of the tests become useless. We have such capability in our automation framework for locating problems easier.
 ### Solution ###
 In my opinion, running multiple browsers on single machine brings more problems than benefits. So, in our company, we prefer to execute the tests on more agents on one browser at a time. 
-Also, instead of making screenshots with WebDriver, we use JavaScript to create full page screenshots, which means, even if we use multiple browsers on a machine, we would be able to make them. 
 
+## Screenshots ##
+ The same is valid for taking screenshots for some drivers that take screenshots of the entire desktop instead of the browser tab.
+### Solution ###
+Instead of making screenshots with WebDriver, we use JavaScript to create full page screenshots, which means, even if we use multiple browsers on a machine, we would be able to make them. 
 ## Change Port on WebDriver Initialization ##
 Another problem we faced trying to run our UI tests in parallel on a single machine was that not all drivers get a free port on initialization. If you attempt to create the driver a second time before disposing of the first one, it tells you that the port is already in use. The same may happen if you use proxies. 
 ### Solution ###

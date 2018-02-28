@@ -3,6 +3,11 @@ layout: default
 title:  "What is a Parallel Test Execution?"
 excerpt: "Read more about the different types of parallel test execution."
 date:   2018-02-20 11:50:17 +0200
+permalink: /what-is-parallel-test-execution/
+anchors:
+  1-parallel-single-machine-multiple-processes: Parallel Testing
+  2-distributed-testing-multiple-machines-single-process: Distributed Testing
+  3-parallel-distributed-testing-multiple-machines - Distributed Parallel Testing
 ---
 I can define at least three types of parallel test execution:
 

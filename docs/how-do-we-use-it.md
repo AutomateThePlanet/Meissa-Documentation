@@ -3,6 +3,7 @@ layout: default
 title:  "How Do We Use It?"
 excerpt: "Provides detailed steps how to start using Meissa. Find detailed explanations for all keywords, available arguments."
 date:   2018-02-20 07:50:17 +0200
+permalink: /how-do-we-use-it/
 ---
 1. **Start Meissa server**
 ```

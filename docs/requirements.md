@@ -3,6 +3,9 @@ layout: default
 title:  "Requirements"
 excerpt: "Requirements"
 date:   2018-02-20 09:50:17 +0200
+permalink: /requirements/
+anchors:
+  prerequisites: Prerequisites
 ---
 **Supported Operating Systems**: Windows, Linux, MacOS
 

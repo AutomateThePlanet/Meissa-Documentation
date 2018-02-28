@@ -3,6 +3,9 @@ layout: default
 title:  "Advantages Distributed Parallel Test Execution"
 excerpt: "Find out why do you need to run your tests distributed."
 date:   2018-02-20 00:50:17 +0200
+permalink: /advantages-distributed-parallel-test-execution/
+anchors:
+  why-do-you-need-to-distribute-your-tests: Why Distribute?
 ---
 ![Advantages Parallel Test Execution](https://i.imgur.com/L1fW4Lu.png)
 
