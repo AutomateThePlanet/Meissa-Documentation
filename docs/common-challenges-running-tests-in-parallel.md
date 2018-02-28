@@ -2,7 +2,7 @@
 layout: default
 title:  "Common Challenges Running Tests in Parallel"
 excerpt: "Read about the many challenges you need to overcome before you are ready to speed up your tests. Find sample solutions."
-date:   2018-02-20 01:50:17 +0200
+permalink: /common-challenges/
 anchors:
   preparing-test-environment-and-managing-tests-data: Preparing Environment
   internal-apis-load: APIs Load

@@ -40,3 +40,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+navigation:
+    "common-challenges":
+        title: Common Challengers Running Parallel Tests
