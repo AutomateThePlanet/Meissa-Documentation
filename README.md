@@ -1,7 +1,7 @@
 # Docs @ Meissa
 
 Welcome to the repo for our documentation. This is the source for
-[https://docs.meissarunner.com/](https://docs.meissarunner.com/).
+[http://docs.meissarunner.com/](http://docs.meissarunner.com/).
 
 Feel free to send us pull requests and file issues. Our docs are completely
 open source and we deeply appreciate contributions from our community!
@@ -10,7 +10,7 @@ open source and we deeply appreciate contributions from our community!
 
 We really want your feedback, and we've made it easy. You can edit, rate, or
 file an issue at the bottom of every page on
-[https://docs.meissarunner.com/](https://docs.meissarunner.com/).
+[http://docs.meissarunner.com/](http://docs.meissarunner.com/).
 
 **Only file issues about the documentation in this repository.** One way
 to think about this is that you should file a bug here if your issue is that you
