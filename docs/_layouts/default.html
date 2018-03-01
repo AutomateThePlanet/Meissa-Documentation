@@ -20,7 +20,7 @@
 					<li class="menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ post[1].title | escape }}</a></li>
 				{% else %}
 					<li class="menu-item current-menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ page[1].title | escape }}</a>
-						{% if page.anchors > 0 %}
+						{% if page.anchors.size > 0 %}
 						<ul class="sub-menu">
 							{% for anchor in page.anchors %}
 							<li class="sub-feature"><a href="#{{ anchor[0] }}" class="js-scroll" data-scrollto="{{ anchor[0] }}">{{ anchor[1] }}</a></li>
