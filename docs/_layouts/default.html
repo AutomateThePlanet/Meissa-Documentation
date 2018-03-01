@@ -2,24 +2,24 @@
 
 <main id="documentation" class="bottom-60">
 	
-	{% if site.posts.size > 0 %}
+	{% if site.navigation.size > 0 %}
 
 	<nav id="features-nav" class="tat-u-xl-1-3 padding-30 bottom-60 lightblue text-blue js-stopscroll">
 		
 		<select id="features-nav-mobile" name="features_nav">
-			{% for post in site.posts %}	
-				<option value="{{ post.url | absolute_url }}" {% if post.id == page.id %}selected{% endif %}>
-				{{ post.title | escape }}				</option>		
+			{% for post in site.navigation %}	
+				<option value="{{ site.url }}/{{ post[0] }}/" {% if post[0] == page.permalink %}selected{% endif %}>
+				{{ post[1].title | escape }}				</option>		
 			{% endfor %}
 		</select>
 		
 		
 		<ul id="menu-features" class="">
-			{% for post in site.posts %}
-				{% if post.id != page.id %}
-					<li class="menu-item"><a href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a></li>
+			{% for post in site.navigation %}
+				{% if post[0] != page.permalink %}
+					<li class="menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ post[1].title | escape }}</a></li>
 				{% else %}
-					<li class="menu-item current-menu-item"><a href="#">{{ page.title | escape }}</a>
+					<li class="menu-item current-menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ page[1].title | escape }}</a>
 						{% if page.anchors > 0 %}
 						<ul class="sub-menu">
 							{% for anchor in page.anchors %}
