@@ -16,7 +16,8 @@
 		
 		<ul id="menu-features" class="">
 			{% for post in site.navigation %}
-				{% if post[0] != page.permalink %}
+				{% assign navurl = '/' | append: post[0] | append: '/' %}
+				{% if navurl != page.permalink %}
 					<li class="menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ post[1].title | escape }}</a></li>
 				{% else %}
 					<li class="menu-item current-menu-item"><a href="{{ site.url }}/{{ post[0] }}/">{{ page[1].title | escape }}</a>
