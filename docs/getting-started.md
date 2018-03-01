@@ -7,9 +7,9 @@ permalink: /getting-started/
 anchors:
   1-parallel-single-machine-multiple-processes: Parallel Testing
   2-distributed-testing-multiple-machines-single-process: Distributed Testing
-  3-parallel-distributed-testing-multiple-machines - Distributed Parallel Testing
+  3-parallel-distributed-testing-multiple-machines: Distributed Parallel Testing
 ---
-1. Go to [**meissarunner.com**](http://meissarunner.com/ "meissarunner.com")
+1. Go to [**meissarunner.com**](https://meissarunner.com/ "meissarunner.com")
 2. Download the file for your operating system (Windows, Linux, MacOS)
 3. Unzip It 
 
