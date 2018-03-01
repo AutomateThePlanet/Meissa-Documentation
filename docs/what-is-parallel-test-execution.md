@@ -7,7 +7,7 @@ permalink: /what-is-parallel-test-execution/
 anchors:
   1-parallel-single-machine-multiple-processes: Parallel Testing
   2-distributed-testing-multiple-machines-single-process: Distributed Testing
-  3-parallel-distributed-testing-multiple-machines - Distributed Parallel Testing
+  3-parallel-distributed-testing-multiple-machines: Distributed Parallel Testing
 ---
 I can define at least three types of parallel test execution:
 
