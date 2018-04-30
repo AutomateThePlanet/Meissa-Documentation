@@ -26,7 +26,7 @@ If Meissa doesn't offer your test technology, you can build a new plugin quickly
 
 You can find two already built plugins in the [GitHub repository](https://github.com/angelovstanton/Meissa)- **Meissa.Plugins.MSTest** and **Meissa.Plugins.NUnit**
 
-## Extensibility  Points Plugins ##
+## Extensibility Points Plugins ##
 The extensibility points plugins offer way to plug in your own logic in various points of the execution pipeline of Meissa runner and test agents.
 **Test Agent Points:**
 - before test run
