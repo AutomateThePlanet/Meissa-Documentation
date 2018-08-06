@@ -11,8 +11,8 @@ Additionally, in my research we asked our followers a similar question in our su
 Approach      |Percent        
 ------------- | ------------- 
 Unit test framework + Selenium grid  | 56.25%
-CI tool as jobs and slaves  | 6.25%
-Custom solution | 18.75%
+Microsoft Test Agents  | 6.25%
+CI tool as jobs and slaves | 18.75%
 Custom solution | 18.75%
 
 The most common practice is to run your tests in parallel, based on the machine cores, and to leverage on the Selenium Grid if we are talking about UI tests. However, this solution has a couple of drawbacks. For example, most native runners can run tests in parallel only if they are in separate projects/containers/libraries. Meissa can run tests without additional attributes/annotations/configurations added to your source code. Using it makes the onboarding of the parallel tests execution easier and faster.
