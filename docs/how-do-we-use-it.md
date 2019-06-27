@@ -7,7 +7,7 @@ permalink: /how-do-we-use-it/
 ---
 1. **Start Meissa server**
 ```
-meissa.exe initServer
+dotnet meissa.dll initServer
 ```
 
 To coordinate all agents and runners Meissa has its own server with its own DB.
@@ -15,7 +15,7 @@ To coordinate all agents and runners Meissa has its own server with its own DB.
 
 2. **Start Meissa test agent**
 ```
-meissa.exe testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+dotnet meissa.dll testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
 ```
 
 Start Meissa in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. 
@@ -32,12 +32,12 @@ Usually, you have one test agent per machine. So, the more machines you have, th
 
 **Example:**
 ```
-meissa.exe testAgent --testAgentTag="API" --testServerUrl="http://00.220.159.255:5000"
+dotnet meissa.dll testAgent --testAgentTag="API" --testServerUrl="http://00.220.159.255:5000"
 ```
 
 3. **Start Meissa tests runner**
 ```
-meissa.exe runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
+dotnet meissa.dll runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
 --agentTag="API" --testTechnology="MSTestCore" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
@@ -69,7 +69,7 @@ The path to the file where your tests are located, it is located in the same fol
 
 **Example:**
 ```
-meissa.exe runner --resultsFilePath="D:\MyRuns\result.trx" --outputFilesLocation="D:\MyRuns\BuildFiles\" 
+dotnet meissa.dll runner --resultsFilePath="D:\MyRuns\result.trx" --outputFilesLocation="D:\MyRuns\BuildFiles\" 
 --agentTag="API" --testTechnology="MSTestCore" 
 --testLibraryPath="D:\MyRuns\BuildFiles\BellatrixTests.dll"
 ```

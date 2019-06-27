@@ -13,6 +13,18 @@ anchors:
 2. Download the file for your operating system (Windows, Linux, MacOS)
 3. Unzip It 
 
+Or you can download and 'install' the tool through new .NET Core templates.
+1. Create a new folder
+2. Open CLI and navigate to the folder
+3. Execute **dotnet new -i Meissa.Windows**  (this will install the template)
+4. Execute **dotnet new Meissa.Windows** (this will extract all tool's files to the folder)
+
+This approach is preferred for easier integration with Docker or CI jobs.
+**Available Templates:**
+- Meissa.MacOS64
+- Meissa.Lunix64
+- Meissa.Windows
+
 You need to choose which type of test execution you prefer:
 - Parallel- single machine - multiple processes
 - Distributed testing- multiple machines - single process
@@ -28,15 +40,15 @@ In this scenario, you will execute your test on a single machine.
 
 - Start Meissa in **server mode** on your machine
 ```
-meissa.exe initServer
+dotnet meissa.dll initServer
 ```
 - Start Meissa in **test agent mode** on the same machine
 ```
-meissa.exe testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+dotnet meissa.dll testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
 ```
 - Run your tests with Meissa **test runner mode** on the same machine
 ```
-meissa.exe runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
+dotnet meissa.dll runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
 --agentTag="APIAgent" --testTechnology="MSTestCore" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
@@ -49,15 +61,15 @@ In this scenario, you will execute your test on multiple machines.
 
 - Start Meissa in **server mode** on a dedicated machine. Depending on what resources does it have, you may consider the option to have a dedicated computer for the server or at least not start it on the same device where there is a test agent or runner. Please refer to the **requirements** section.
 ```
-meissa.exe initServer
+dotnet meissa.dll initServer
 ```
 - Start Meissa in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started Meissa in server mode.
 ```
-meissa.exe testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+dotnet meissa.dll testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
 ```
 - Run your tests with Meissa **test runner mode** on some of the machines or even better prefer starting it on a dedicated computer. Refer to the requirements section.
 ```
-meissa.exe runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
+dotnet meissa.dll runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
 --agentTag="APIAgent" --testTechnology="MSTestCore" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
