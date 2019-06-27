@@ -47,8 +47,6 @@ navigation:
         title: Advantages Distributed Testing
     "getting-started":
         title: Getting Started
-    "common-challenges":
-        title: Parallel Tests Challenges 
     "requirements":
         title: Requirements
     "features":
@@ -59,8 +57,6 @@ navigation:
         title: Why Did We Build It?
     "history":
         title: History
-    "the-biggest-experiment":
-        title: The Biggest Experiment
     "when-it-is-appropriate-to-use-and-when-not":
         title: When to Use?
     "how-does-it-work-internally":

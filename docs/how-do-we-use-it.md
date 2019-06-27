@@ -59,9 +59,9 @@ The path where the results produced by the runner will be saved. The file should
 Output files location is the place where the files of your built libraries are placed. They should be moved there after you build your project.
 
 ```
---testTechnology="MSTestCore"
+--testTechnology="MSTest"
 ```
-The testTechnology argument is used to point which native runner should Meissa use. Right now you can choose between **MSTestCore**, **NUnit** and **MSTestFramework**. Later, more options will be added. The parameter is required since depending on the technology used the localization of tests, merge of tests results, test executions are different.
+The testTechnology argument is used to point which native runner should Meissa use. Right now you can choose between **MSTest** and **NUnit** (NodeJs Jasmine runner comming soon). Later, more options will be added. The parameter is required since depending on the technology used the localization of tests, merge of tests results, test executions are different. With the MSTest switch you can test .NET framework and .NET Core projects.
 ```
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
