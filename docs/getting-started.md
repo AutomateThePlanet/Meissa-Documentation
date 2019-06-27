@@ -20,6 +20,7 @@ Or you can download and 'install' the tool through new .NET Core templates.
 4. Execute **dotnet new Meissa.Windows** (this will extract all tool's files to the folder)
 
 This approach is preferred for easier integration with Docker or CI jobs.
+
 **Available Templates:**
 - Meissa.MacOS64
 - Meissa.Lunix64
