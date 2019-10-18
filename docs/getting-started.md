@@ -16,15 +16,15 @@ anchors:
 Or you can download and 'install' the tool through new .NET Core templates.
 1. Create a new folder
 2. Open CLI and navigate to the folder
-3. Execute **dotnet new -i Meissa.Windows**  (this will install the template)
-4. Execute **dotnet new Meissa.Windows** (this will extract all tool's files to the folder)
+3. Execute **dotnet new -i Meissa.Windows64**  (this will install the template)
+4. Execute **dotnet new Meissa.Windows64** (this will extract all tool's files to the folder)
 
 This approach is preferred for easier integration with Docker or CI jobs.
 
 **Available Templates:**
 - Meissa.MacOS64
 - Meissa.Lunix64
-- Meissa.Windows
+- Meissa.Windows64
 
 You need to choose which type of test execution you prefer:
 - Parallel- single machine - multiple processes
