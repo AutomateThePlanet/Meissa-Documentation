@@ -45,7 +45,7 @@ meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachi
 ```
 - Run your tests with MEISSA **test runner mode** on the same machine. Execute in CLI.
 ```
-meissa runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
+meissa runner --resultsFilePath="pathToResults\result.trx"
 --agentTag="APIAgent" --testTechnology="MSTest" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
@@ -66,7 +66,7 @@ meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachi
 ```
 - Run your tests with MEISSA **test runner mode** on some of the machines or even better prefer starting it on a dedicated computer. Refer to the requirements section.
 ```
-meissa runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
+meissa runner --resultsFilePath="pathToResults\result.trx"
 --agentTag="APIAgent" --testTechnology="MSTest" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```

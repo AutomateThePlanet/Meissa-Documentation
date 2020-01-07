@@ -16,5 +16,5 @@ We have tons of other logic that needs to be tested, so we ended up with over 45
 We need to be able to deliver updates a few times a day so this was unacceptable. 
 
 ![4 hours Bellatrix Build](https://i.imgur.com/YpH0u84.png)
-Now with Meissa, we execute them in under 4 hours. 
+Now with MEISSA, we execute them in under 4 hours. 
 

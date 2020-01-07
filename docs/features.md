@@ -1,8 +1,8 @@
 ---
 layout: default
 title:  "Features"
-excerpt: "Find out how our tool can help you, read the complete list of Meissa features."
-date:   2018-02-20 02:50:17 +0200
+excerpt: "Find out how our tool can help you, read the complete list of MEISSA features."
+date:   2020-01-07 02:50:17 +0200
 permalink: /features/
 anchors:
   parallel-on-agents: Parallel on Agents
@@ -13,11 +13,11 @@ anchors:
   single-cli: Single CLI
   safe-test-run-abortion: Safe Test Run Abortion
 ---
-![Meissa Features](https://i.imgur.com/978W5sG.png)
+![MEISSA Features](https://i.imgur.com/978W5sG.png)
 ## Parallel on Agents ##
 The tests execution tremendously speeds up from the distribution on multiple machines. However, it can be further improved by executing the tests in parallel on the tests agents. It can parallelize the tests even in a single container.
 ## Cross-Platform ##
-Runs tests on Windows, MacOS, and Linux.
+Runs tests on Windows, OSX, and Linux.
 Smart Tests Balancing
 Smartly balances the tests across remote machines based on previous tests execution times which can significantly improve the overall tests runs’ time.
 ## Failing Tests Retry ##

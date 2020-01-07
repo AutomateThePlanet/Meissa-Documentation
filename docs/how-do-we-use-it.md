@@ -1,28 +1,30 @@
 ---
 layout: default
 title:  "How Do We Use It?"
-excerpt: "Provides detailed steps how to start using Meissa. Find detailed explanations for all keywords, available arguments."
-date:   2018-02-20 07:50:17 +0200
+excerpt: "Provides detailed steps how to start using MEISSA. Find detailed explanations for all keywords, available arguments."
+date:   2020-01-07 07:50:17 +0200
 permalink: /how-do-we-use-it/
 ---
-1. **Start Meissa server**
-```
-dotnet meissa.dll initServer
-```
+All commands are executed in command line interface CLI.
 
-To coordinate all agents and runners Meissa has its own server with its own DB.
-
-
-2. **Start Meissa test agent**
+1. **Start MEISSA server**
 ```
-dotnet meissa.dll testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+meissaserver
 ```
 
-Start Meissa in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. 
+To coordinate all agents and runners MEISSA has its own server with its own DB.
+
+
+2. **Start MEISSA test agent**
+```
+meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+```
+
+Start MEISSA in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. 
 ```
 --testServerUrl="http://IPServerMachine:5000"
 ```
-Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started Meissa in server mode.
+Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started MEISSA in server mode.
 ```
 --testAgentTag="APIAgent"
 ```
@@ -32,21 +34,21 @@ Usually, you have one test agent per machine. So, the more machines you have, th
 
 **Example:**
 ```
-dotnet meissa.dll testAgent --testAgentTag="API" --testServerUrl="http://00.220.159.255:5000"
+meissa testAgent --testAgentTag="API" --testServerUrl="http://00.220.159.255:5000"
 ```
 
-3. **Start Meissa tests runner**
+3. **Start MEISSA tests runner**
 ```
-dotnet meissa.dll runner --resultsFilePath="pathToResults\result.trx" --outputFilesLocation="pathToBuildedFiles" 
---agentTag="API" --testTechnology="MSTestCore" 
+meissa runner --resultsFilePath="pathToResults\result.trx" 
+--agentTag="API" --testTechnology="MSTest" 
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
 
 Usually, you start the runner from CI job. The typical workflow will be: 
 - Download the tests source code
 - Build it
-- Execute tests with Meissa
-- Publish the results produced by Meissa
+- Execute tests with MEISSA
+- Publish the results produced by MEISSA
 
 ```
 --resultsFilePath="pathToResults\result.trx
@@ -54,23 +56,17 @@ Usually, you start the runner from CI job. The typical workflow will be:
 The path where the results produced by the runner will be saved. The file should be in the expected file format. **TRX** is the file format for .NET tests. In Java, the extension will be different.
 
 ```
---outputFilesLocation="pathToBuildedFiles"
-```
-Output files location is the place where the files of your built libraries are placed. They should be moved there after you build your project.
-
-```
 --testTechnology="MSTest"
 ```
-The testTechnology argument is used to point which native runner should Meissa use. Right now you can choose between **MSTest** and **NUnit** (NodeJs Jasmine runner comming soon). Later, more options will be added. The parameter is required since depending on the technology used the localization of tests, merge of tests results, test executions are different. With the MSTest switch you can test .NET framework and .NET Core projects.
+The testTechnology argument is used to point which native runner should MEISSA use. Right now you can choose between **MSTest** and **NUnit** (NodeJs Jasmine runner comming soon). Later, more options will be added. The parameter is required since depending on the technology used the localization of tests, merge of tests results, test executions are different. With the MSTest switch you can test .NET framework and .NET Core projects.
 ```
 --testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
 ```
-The path to the file where your tests are located, it is located in the same folder pointed with the **outputFilesLocation** argument.
 
 **Example:**
 ```
-dotnet meissa.dll runner --resultsFilePath="D:\MyRuns\result.trx" --outputFilesLocation="D:\MyRuns\BuildFiles\" 
---agentTag="API" --testTechnology="MSTestCore" 
+meissa runner --resultsFilePath="D:\MyRuns\result.trx"
+--agentTag="API" --testTechnology="MSTest" 
 --testLibraryPath="D:\MyRuns\BuildFiles\BellatrixTests.dll"
 ```
 ### Advanced Parameters ###
@@ -84,24 +80,25 @@ This argument will pass the value to the native tests runner. Here, we tell the 
 --retriedResultsFilePath="pathToResults\retriedResult.trx" --retriesCount=3 --threshold=90
 ```
 
-With this one, we tell Meissa to retry the failed tests three times if less than 5% of all tests have failed.
+With this one, we tell MEISSA to retry the failed tests three times if less than 5% of all tests have failed.
 ```
 --testsFilter="test.FullName != \"TestName\" AND !test.Categories.Contains(\"CI\")"
 ```
 
-Meissa has a built-in complex test filter parser, and we can write complex queries to filter the tests. 
+MEISSA has a built-in complex test filter parser, and we can write complex queries to filter the tests.
 ```
 --customArguments="BuildNumber=42" 
 ```
+**Note**: To use this feature make sure the runner and the agent are with **Administrative permissions**!
 
 Sometimes, it is useful to pass data to tests from the runner. For example, you may need to pass the current build number, so you can create a folder in your tests. If you use this argument, each agent will create an environmental variable with the name BuildNumber, and it will assign the value 42. After that, it is easy to get the value from your tests.
 ```
 --timeBasedBalance
 ```
 
-Instructs Meissa to balance the tests, not based on the count, but on the previous execution times of the tests. To use it, you need to execute all your tests at least one time. This is quite useful because some of your UI tests may execute for 1 minute or more but most of them for 30 seconds or less. As I mentioned, the whole tests execution time is equal to the slowest sub-run. This feature can sometimes drastically decrease the execution time. 
+Instructs MEISSA to balance the tests, not based on the count, but on the previous execution times of the tests. To use it, you need to execute all your tests at least one time. This is quite useful because some of your UI tests may execute for 1 minute or more but most of them for 30 seconds or less. As I mentioned, the whole tests execution time is equal to the slowest sub-run. This feature can sometimes drastically decrease the execution time. 
 ```
 --runInParallel
 ```
 
-Tells Meissa to execute the tests on each agent in parallel. You can even specify how many processes to spawn. This is most useful for unit, API, or headless UI tests. 
+Tells MEISSA to execute the tests on each agent in parallel. You can even specify how many processes to spawn. This is most useful for unit, API, or headless UI tests. 
