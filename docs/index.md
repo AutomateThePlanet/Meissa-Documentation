@@ -4,9 +4,15 @@ title:  "Getting Started"
 excerpt: "Getting Started"
 date:   2018-02-20 04:50:17 +0200
 ---
-1. Open CLI and navigate to the folder
-2. Execute **dotnet tool install --global meissaserver**  (this will install the MEISSA server)
-3. Execute **dotnet tool install --global meissa** (this will install the MEISSA agent + runner)
+Open CLI and execute
+```
+dotnet tool update --global meissaserver
+```
+This will install the MEISSA server as a global tool.
+```
+dotnet tool update --global meissa
+```
+This will install the MEISSA agent + runner as a global tool.
 
 To update to the latest version execute:
 ```
