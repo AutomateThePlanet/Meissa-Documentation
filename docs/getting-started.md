@@ -11,11 +11,11 @@ anchors:
 ---
 Open CLI and execute
 ```
-dotnet tool update --global meissaserver
+dotnet tool install --global meissaserver
 ```
 This will install the MEISSA server as a global tool.
 ```
-dotnet tool update --global meissa
+dotnet tool install --global meissa
 ```
 This will install the MEISSA agent + runner as a global tool.
 
