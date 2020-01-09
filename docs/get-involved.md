@@ -2,12 +2,12 @@
 layout: default
 title:  "Get Involved"
 excerpt: "Find out how you can contribute to the project."
-date:   2018-02-20 03:50:17 +0200
+date:   2020-01-09 03:50:17 +0200
 permalink: /get-involved/
 ---
-- [**Report bugs**](https://github.com/angelovstanton/Meissa/issues)
+- [**Report bugs**](https://github.com/AutomateThePlanet/Meissa/issues)
 - Suggest new features
 - Help us write more test runners
 - Add more unit tests
 - Optimize the performance
-- Go to [**Gitter**](https://gitter.im/meissarunner/) and send us a message
+- Go to [**Forum**](https://bellatrix.solutions/forums/forums/test/meissa-test-runner/)

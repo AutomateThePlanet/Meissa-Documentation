@@ -17,16 +17,16 @@ To coordinate all agents and runners MEISSA has its own server with its own DB.
 
 2. **Start MEISSA test agent**
 ```
-meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+meissa testAgent --agentTag="APIAgent" --serverUrl="http://IPServerMachine:89"
 ```
 
 Start MEISSA in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. 
 ```
---testServerUrl="http://IPServerMachine:5000"
+--serverUrl="http://IPServerMachine:89"
 ```
 Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started MEISSA in server mode.
 ```
---testAgentTag="APIAgent"
+--agentTag="APIAgent"
 ```
 You mark all of your test agents with specific tags. It is so because you can have multiple test agents connected to a single test server. However, you can run tests only on test agents with a specific tag (a machine that has a particular program installed, etc.). The computers where you execute your UI tests will be most probably stronger than the one that you run your API tests and has additional software installed.
 
@@ -34,14 +34,14 @@ Usually, you have one test agent per machine. So, the more machines you have, th
 
 **Example:**
 ```
-meissa testAgent --testAgentTag="API" --testServerUrl="http://00.220.159.255:5000"
+meissa testAgent --agentTag="API" --serverUrl="http://00.220.159.255:89"
 ```
 
 3. **Start MEISSA tests runner**
 ```
 meissa runner --resultsFilePath="pathToResults\result.trx" 
 --agentTag="API" --testTechnology="MSTest" 
---testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
+--testLibraryPath="pathToBuildedFiles\SampleTestProj.dll" --serverUrl="http://IPServerMachine:89"
 ```
 
 Usually, you start the runner from CI job. The typical workflow will be: 
@@ -67,7 +67,7 @@ The testTechnology argument is used to point which native runner should MEISSA u
 ```
 meissa runner --resultsFilePath="D:\MyRuns\result.trx"
 --agentTag="API" --testTechnology="MSTest" 
---testLibraryPath="D:\MyRuns\BuildFiles\BellatrixTests.dll"
+--testLibraryPath="D:\MyRuns\BuildFiles\BellatrixTests.dll" --serverUrl="http://00.220.159.255:89"
 ```
 ### Advanced Parameters ###
 ```

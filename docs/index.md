@@ -42,13 +42,13 @@ meissaserver
 ```
 - Start MEISSA in **test agent mode** on the same machine. Execute in CLI.
 ```
-meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+meissa testAgent --agentTag="APIAgent" --serverUrl="http://IPServerMachine:89"
 ```
 - Run your tests with MEISSA **test runner mode** on the same machine. Execute in CLI.
 ```
 meissa runner --resultsFilePath="pathToResults\result.trx"
 --agentTag="APIAgent" --testTechnology="MSTest" 
---testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
+--testLibraryPath="pathToBuildedFiles\SampleTestProj.dll" --serverUrl="http://IPServerMachine:89"
 ```
 
 After the test execution, the runner will be closed. Do not close the server and the test agent they will be reused for the new runs.
@@ -63,13 +63,13 @@ meissaserver
 ```
 - Start MEISSA in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started MEISSA in server mode.
 ```
-meissa testAgent --testAgentTag="APIAgent" --testServerUrl="http://IPServerMachine:5000"
+meissa testAgent --agentTag="APIAgent" --serverUrl="http://IPServerMachine:89"
 ```
 - Run your tests with MEISSA **test runner mode** on some of the machines or even better prefer starting it on a dedicated computer. Refer to the requirements section.
 ```
 meissa runner --resultsFilePath="pathToResults\result.trx"
 --agentTag="APIAgent" --testTechnology="MSTest" 
---testLibraryPath="pathToBuildedFiles\SampleTestProj.dll"
+--testLibraryPath="pathToBuildedFiles\SampleTestProj.dll" --serverUrl="http://IPServerMachine:89"
 ```
 
 After the test execution, the runner will be closed. Do not close the server and the test agent they will be reused for the new runs.
