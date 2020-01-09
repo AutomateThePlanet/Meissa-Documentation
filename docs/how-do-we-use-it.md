@@ -2,7 +2,7 @@
 layout: default
 title:  "How Do We Use It?"
 excerpt: "Provides detailed steps how to start using MEISSA. Find detailed explanations for all keywords, available arguments."
-date:   2020-01-07 07:50:17 +0200
+date:   2020-01-09 07:50:17 +0200
 permalink: /how-do-we-use-it/
 ---
 All commands are executed in command line interface CLI.
@@ -102,3 +102,8 @@ Instructs MEISSA to balance the tests, not based on the count, but on the previo
 ```
 
 Tells MEISSA to execute the tests on each agent in parallel. You can even specify how many processes to spawn. This is most useful for unit, API, or headless UI tests. 
+```
+--sameMachineByClass
+```
+
+The tests from a single class will be executed on the same machine.
