@@ -2,7 +2,7 @@
 layout: default
 title:  "Getting Started"
 excerpt: "See how you can use MEISSA depending on your context."
-date:   2020-01-07 04:50:17 +0200
+date:   2020-01-10 04:50:17 +0200
 permalink: /getting-started/
 anchors:
   "parallel-single-machine-multiple-processes": Parallel Testing
@@ -47,13 +47,13 @@ meissaserver
 ```
 - Start MEISSA in **test agent mode** on the same machine. Execute in CLI.
 ```
-meissa testAgent --agentTag="APIAgent" --serverUrl="http://IPServerMachine:89"
+meissa agent --tag="APIAgent" --server="http://IPServerMachine:89"
 ```
 - Run your tests with MEISSA **test runner mode** on the same machine. Execute in CLI.
 ```
-meissa runner --resultsFilePath="pathToResults\result.trx"
---agentTag="APIAgent" --testTechnology="MSTest" 
---testLibraryPath="pathToBuildedFiles\SampleTestProj.dll" --serverUrl="http://IPServerMachine:89"
+meissa runner --results="pathToResults\result.trx"
+--tag="APIAgent" --testTechnology="MSTest" 
+--library="pathToBuildedFiles\SampleTestProj.dll" --server="http://IPServerMachine:89"
 ```
 
 After the test execution, the runner will be closed. Do not close the server and the test agent they will be reused for the new runs.
@@ -68,13 +68,13 @@ meissaserver
 ```
 - Start MEISSA in **test agent mode** on all machines that you want to be agents. Depending on their resources and what will be executed, prefer scenarios where the test agent runs there in isolation. Make sure to set the correct test server URL. It is formed by the IP of the machine where you have started MEISSA in server mode.
 ```
-meissa testAgent --agentTag="APIAgent" --serverUrl="http://IPServerMachine:89"
+meissa agent --tag="APIAgent" --server="http://IPServerMachine:89"
 ```
 - Run your tests with MEISSA **test runner mode** on some of the machines or even better prefer starting it on a dedicated computer. Refer to the requirements section.
 ```
-meissa runner --resultsFilePath="pathToResults\result.trx"
---agentTag="APIAgent" --testTechnology="MSTest" 
---testLibraryPath="pathToBuildedFiles\SampleTestProj.dll" --serverUrl="http://IPServerMachine:89"
+meissa runner --results="pathToResults\result.trx"
+--tag="APIAgent" --testTechnology="MSTest" 
+--library="pathToBuildedFiles\SampleTestProj.dll" --server="http://IPServerMachine:89"
 ```
 
 After the test execution, the runner will be closed. Do not close the server and the test agent they will be reused for the new runs.
@@ -84,6 +84,6 @@ All configurations are almost the same as the previous section except the runnin
 To execute the tests in parallel, you have two options. If you use the parallel capabilities of the used native runner, then you don't have to do anything more. The tests will be executed in parallel on each test agent machine.
 If you want to use MEISSA's parallel execution capabilities, you need to add an argument to the runner options.
 ```
---runInParallel
+--parallelRun
 ```
 For more detailed information refer to the [**features**](features.md) and [**how it works internally**](how-does-it-work-internally.md) sections.
